@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<style>
+    #container{
+        margin: auto;
+        margin-left: 400px;
+        width: 40%;
+        display: inline-block;
+        padding: 10px;
+        border: 2px solid black;
+    }
+</style>
+
+</head>
+
+
+<body>
+    <br>
+    <br>
+    <div id='container'>
+        <form action='/register' method='post'>
+            <div class="form-group">
+                Your Name: <input type="text" name="name" value = "" class="form-control"/>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleSelect1">Dojo Location</label>
+                <select class="form-control" name="location" id="exampleSelect1">
+                <option>--------</option>
+                <option>Berkeley, CA</option>
+                <option>Boise, ID</option>
+                <option>Chicago, IL</option>
+                <option>Dallas,TX</option>
+                <option>Los Angeles, CA</option>
+                <option>Orange County</option>
+                <option>Seattle, WA</option>
+                <option>Silicon Valley, CA</option>
+                <option>Tulsa, OK</option>
+                <option>Tysons Corner, VA</option>
+            </select>
+            </div>
+
+
+            <div class="form-group">
+                    <label for="exampleSelect1">Language</label>
+                    <select class="form-control" name="language" id="exampleSelect1">
+                    <option>--------</option>
+                    <option>JavaScript</option>
+                    <option>C++</option>
+                    <option>Mean</option>
+                    <option>Python</option>
+                    <option>PHP</option>
+                    <option>Java</option>
+                </select>
+                </div>
+
+            <div class="form-group">
+                Comment (optional): <input type="text" name="comment" value = "" class="form-control"/>
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div> 
+</body>
+</html>

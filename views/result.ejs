@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result</title>
+
+    <style>
+        #container{
+            margin: auto;
+            margin-left: 400px;
+            width: 40%;
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+        }
+    </style>
+
+
+
+</head>
+<body>
+        <br>
+        <br>
+    
+
+    <div id=container>
+        <p>Thanks for submitting this form! You have submitted this form <%= survey %> times now.</p>
+        <p>Name: <%= formdata.name %></p>
+        <p>Location: <%= formdata.location  %></p>
+        <p>Language: <%= formdata.language  %></p>
+        <p>Comment: <%= formdata.comment  %></p>
+        <p><a href="/"><button>Go Back</button></a></p>
+        
+    </div>
+     
+</body>
+</html>
